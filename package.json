@@ -1,0 +1,95 @@
+{
+  "name": "rt-wyy",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "author": {
+    "name": "lokiyun",
+    "email": "3512545450@qq.com"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.1.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-regular-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "classnames": "^2.2.6",
+    "electron-is-dev": "^1.2.0",
+    "electron-store": "^5.1.1",
+    "ffmpeg": "^0.0.4",
+    "node-sass": "^4.14.1",
+    "purecss": "^2.0.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "typescript": "~3.7.2",
+    "uuid": "^8.1.0"
+  },
+  "homepage": ".",
+  "build": {
+    "appId": "skyMusic",
+    "productName": "本地音乐播放器",
+    "copyright": "Copyright © 2020 ${author}",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*",
+      "package.json",
+      "main.js",
+      "musicStore.js",
+      "./src/utils/ffmpeg/**/*"
+    ],
+    "extends": null
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "concurrently \"wait-on http://localhost:3000 && electron .\" \"cross-env BROWSER=none npm start\"",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "prepack": "npm run build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.10",
+    "@types/react-redux": "^7.1.9",
+    "@types/react-router-config": "^5.0.1",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/react-table": "^7.0.18",
+    "@types/swiper": "^5.3.1",
+    "@types/uuid": "^8.0.0",
+    "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2",
+    "electron": "^8.3.0",
+    "electron-builder": "^22.7.0",
+    "wait-on": "^5.0.0"
+  }
+}
