@@ -1,0 +1,1 @@
+export const Init_User_Info = 'user/init_user_info'

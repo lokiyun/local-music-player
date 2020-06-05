@@ -1,0 +1,44 @@
+.model-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background-color: #576574;
+  color: #fff;
+  opacity: .8;
+  border-radius: 10px;
+  input {
+    color: #000;
+  }
+  button {
+    background-color: #e74c3c;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    user-select: none;
+    padding: 0.5rem 2rem;
+  }
+  .model-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    font-size: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+    :hover {
+      color: #ccc;
+    }
+  }
+  .model-title-warn {
+    padding-left: 2rem;
+    color: #f00;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,1 @@
+export const INIT_BANNER_LIST = 'home/init_banner_list'
